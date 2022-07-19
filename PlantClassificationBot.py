@@ -151,7 +151,6 @@ def photo(message):
     bot.send_message(message.chat.id, text=response, parse_mode="HTML", disable_web_page_preview=True)
 
 
-# Обработчик всяких непонятных ситуаций када пользователь шлёт всякую дрись
 @bot.message_handler(content_types=["sticker", "pinned_message", "document", "audio", 'video', 'video_note', 'voice',
                                     'location', 'contact', 'new_chat_members', 'left_chat_member', 'new_chat_title',
                                     'new_chat_photo', 'delete_chat_photo', 'group_chat_created',
